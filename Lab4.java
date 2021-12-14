@@ -29,11 +29,19 @@ public class Main {
             {   
                 n=a;
                 i+=1;
-                for ( a = n; a<b-i ; a++ )
+                for ( a = n; a<b-i; a++ )
                 { 
                   array[a] = array [a+1];
                 
                 }
+                
+                if (n==a)
+                {break;}
+                else if(n!=0)   
+                {a=n-i;}
+                
+                else 
+                {a=n-1;}
             }
             
         }
@@ -42,7 +50,7 @@ public class Main {
         for (a=0 ; a<b-i; a++ )
         {System.out.print(" "+array[a]);}
         
-        System.out.print("\nThe privious one was: ");
+        System.out.print("\nThe previous one was: ");
         for (a=0 ; a<b; a++ )
         {System.out.print(" "+prevrray[a]);}
         
